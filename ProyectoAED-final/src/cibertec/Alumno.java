@@ -1,3 +1,10 @@
+
+/*
+ * 
+ * Comentario para la prueba de github
+ * hola soy andre
+ */
+ 
 package cibertec;
 
 import java.awt.EventQueue;
@@ -13,6 +20,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JMenu;
 import javax.swing.JComboBox;
 //prueba
+
+
+
 public class Alumno extends JDialog {
 	private JButton btnAdicionarAlumno;
 	private JButton btnAceptar;
