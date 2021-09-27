@@ -23,7 +23,7 @@ import javax.swing.JComboBox;
 
 
 
-public class JdAlumno extends JDialog {
+public class JdMantAlumno extends JDialog {
 	private JButton btnAdicionarAlumno;
 	private JButton btnAceptar;
 	private JButton btnModificarAlumno;
