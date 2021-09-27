@@ -32,6 +32,8 @@ public class Principal extends JFrame implements ActionListener   {
 	private JMenuItem mntmRetiro;
 	private JMenuItem mntmAlumnoCurso;
 	private JMenuItem mntmMatriculasRetiros;
+	private JMenu mnArchivo;
+	private JMenuItem mntmSalir;
 
 	/**
 	 * Launch the application.
@@ -64,6 +66,12 @@ public class Principal extends JFrame implements ActionListener   {
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setBounds(0, 0, 434, 22);
 		contentPane.add(menuBar);
+		
+		mnArchivo = new JMenu("Archivo");
+		menuBar.add(mnArchivo);
+		
+		mntmSalir = new JMenuItem("Salir");
+		mnArchivo.add(mntmSalir);
 		
 		mnmantenimiento = new JMenu("Mantenimiento");
 		menuBar.add(mnmantenimiento);
@@ -136,14 +144,4 @@ public class Principal extends JFrame implements ActionListener   {
 		}
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
