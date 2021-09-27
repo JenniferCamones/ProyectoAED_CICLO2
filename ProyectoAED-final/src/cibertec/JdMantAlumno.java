@@ -49,7 +49,7 @@ public class JdMantAlumno extends JDialog {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					JdAlumno dialog = new JdAlumno();
+					JdMantAlumno dialog = new JdMantAlumno();
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					dialog.setVisible(true);
 				} catch (Exception e) {
@@ -62,7 +62,7 @@ public class JdMantAlumno extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public JdAlumno() {
+	public JdMantAlumno() {
 		setTitle("Alumno");
 		setBounds(180, 100, 537, 327);
 		getContentPane().setLayout(null);
