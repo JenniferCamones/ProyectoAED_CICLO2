@@ -8,7 +8,7 @@ import java.awt.Color;
 import javax.swing.JTextField;
 
 //pruebas
-// pruebas desde git
+//no
 public class AcercaDelSistema extends JDialog {
 	private JLabel lblJenniferCarolayCamonesQuiroz;
 	private JLabel lblAndreRicardoLozanoPalomino;
