@@ -23,7 +23,7 @@ import javax.swing.JComboBox;
 
 
 
-public class Alumno extends JDialog {
+public class jdAlumno extends JDialog {
 	private JButton btnAdicionarAlumno;
 	private JButton btnAceptar;
 	private JButton btnModificarAlumno;
@@ -49,7 +49,7 @@ public class Alumno extends JDialog {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Alumno dialog = new Alumno();
+					jdAlumno dialog = new jdAlumno();
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					dialog.setVisible(true);
 				} catch (Exception e) {
@@ -62,7 +62,7 @@ public class Alumno extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public Alumno() {
+	public jdAlumno() {
 		setTitle("Alumno");
 		setBounds(180, 100, 537, 327);
 		getContentPane().setLayout(null);
