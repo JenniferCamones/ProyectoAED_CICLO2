@@ -4,7 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JDialog;
 
-public class AlumnosMatriculadosCurso extends JDialog {
+public class JdMatricula extends JDialog {
 
 	/**
 	 * Launch the application.
@@ -13,7 +13,7 @@ public class AlumnosMatriculadosCurso extends JDialog {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					AlumnosMatriculadosCurso dialog = new AlumnosMatriculadosCurso();
+					JdMatricula dialog = new JdMatricula();
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					dialog.setVisible(true);
 				} catch (Exception e) {
@@ -26,7 +26,7 @@ public class AlumnosMatriculadosCurso extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public AlumnosMatriculadosCurso() {
+	public JdMatricula() {
 		setBounds(180, 100, 553, 373);
 
 	}

@@ -132,13 +132,13 @@ public class Principal extends JFrame implements ActionListener   {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		if(mntmAlumno == e.getSource() ) {
-			jdAlumno a = new jdAlumno();//instanciamos AdicionarAlumno 
+			JdAlumno a = new JdAlumno();//instanciamos AdicionarAlumno 
 			a.setLocationRelativeTo(this);
 			a.setVisible(true);
 		}
 		
 		if(mntmCurso == e.getSource() ) {
-			Curso c = new Curso();//instanciamos AdicionarAlumno 
+			JdCurso c = new JdCurso();//instanciamos AdicionarAlumno 
 			c.setLocationRelativeTo(this);
 			c.setVisible(true);
 		}

@@ -9,7 +9,7 @@ import javax.swing.JTextField;
 
 //pruebas
 //no
-public class AcercaDelSistema extends JDialog {
+public class JdAcercaDelSistema extends JDialog {
 	private JLabel lblJenniferCarolayCamonesQuiroz;
 	private JLabel lblAndreRicardoLozanoPalomino;
 	private JLabel lblAaronJonasCalderonLozan;
@@ -22,7 +22,7 @@ public class AcercaDelSistema extends JDialog {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					AcercaDelSistema dialog = new AcercaDelSistema();
+					JdAcercaDelSistema dialog = new JdAcercaDelSistema();
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					dialog.setVisible(true);
 				} catch (Exception e) {
@@ -35,7 +35,7 @@ public class AcercaDelSistema extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public AcercaDelSistema() {
+	public JdAcercaDelSistema() {
 		setTitle("Acerca del Sistema");
 		setBounds(100, 100, 482, 204);
 		getContentPane().setLayout(null);

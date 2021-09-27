@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
 
-public class Curso extends JDialog {
+public class JdCurso extends JDialog {
 	private JButton btnAdicionarCurso;
 	private JButton btnModificarCurso;
 	private JButton btnEliminarCurso;
@@ -32,7 +32,7 @@ public class Curso extends JDialog {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Curso dialog = new Curso();
+					JdCurso dialog = new JdCurso();
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					dialog.setVisible(true);
 				} catch (Exception e) {
@@ -45,7 +45,7 @@ public class Curso extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public Curso() {
+	public JdCurso() {
 		setTitle("Curso");
 		setBounds(180, 100, 494, 322);
 		getContentPane().setLayout(null);
