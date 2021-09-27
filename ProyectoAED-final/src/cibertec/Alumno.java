@@ -11,7 +11,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JTabbedPane;
 import javax.swing.JScrollPane;
 import javax.swing.JMenu;
-
+//prueba
 public class Alumno extends JDialog {
 	private JButton btnAdicionarAlumno;
 	private JButton btnConsultarAlumno;
