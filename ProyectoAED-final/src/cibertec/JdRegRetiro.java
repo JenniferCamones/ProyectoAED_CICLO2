@@ -4,7 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JDialog;
 
-public class JdRetiro extends JDialog {
+public class JdRegRetiro extends JDialog {
 
 	/**
 	 * Launch the application.
@@ -13,7 +13,7 @@ public class JdRetiro extends JDialog {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					JdRetiro dialog = new JdRetiro();
+					JdRegRetiro dialog = new JdRegRetiro();
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					dialog.setVisible(true);
 				} catch (Exception e) {
@@ -26,7 +26,7 @@ public class JdRetiro extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public JdRetiro() {
+	public JdRegRetiro() {
 		setBounds(180, 100, 553, 373);
 
 	}

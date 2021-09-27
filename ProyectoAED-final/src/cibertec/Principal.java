@@ -30,10 +30,12 @@ public class Principal extends JFrame implements ActionListener   {
 	private JMenuItem mntmCurso;
 	private JMenuItem mntmMatricula;
 	private JMenuItem mntmRetiro;
-	private JMenuItem mntmAlumnoCurso;
-	private JMenuItem mntmMatriculasRetiros;
+	private JMenuItem mntmConsutAlumno;
+	private JMenuItem mntmConsutCurso;
 	private JMenu mnArchivo;
 	private JMenuItem mntmSalir;
+	private JMenuItem mntmConsutMatricula;
+	private JMenuItem mntmConsutRetiro;
 
 	/**
 	 * Launch the application.
@@ -99,13 +101,19 @@ public class Principal extends JFrame implements ActionListener   {
 		mnconsulta = new JMenu("Consulta");
 		menuBar.add(mnconsulta);
 		
-		mntmAlumnoCurso = new JMenuItem("Alumno y curso");
-		mntmAlumnoCurso.addActionListener(this);
-		mnconsulta.add(mntmAlumnoCurso);
+		mntmConsutAlumno = new JMenuItem("Alumno");
+		mntmConsutAlumno.addActionListener(this);
+		mnconsulta.add(mntmConsutAlumno);
 		
-		mntmMatriculasRetiros = new JMenuItem("Matriculas y retiros");
-		mntmMatriculasRetiros.addActionListener(this);
-		mnconsulta.add(mntmMatriculasRetiros);
+		mntmConsutCurso = new JMenuItem("Curso");
+		mntmConsutCurso.addActionListener(this);
+		mnconsulta.add(mntmConsutCurso);
+		
+		mntmConsutMatricula = new JMenuItem("Matricula");
+		mnconsulta.add(mntmConsutMatricula);
+		
+		mntmConsutRetiro = new JMenuItem("Retiro");
+		mnconsulta.add(mntmConsutRetiro);
 		
 		mnreporte = new JMenu("Reporte");
 		menuBar.add(mnreporte);
@@ -138,7 +146,7 @@ public class Principal extends JFrame implements ActionListener   {
 		}
 		
 		if(mntmCurso == e.getSource() ) {
-			JdCurso c = new JdCurso();//instanciamos AdicionarAlumno 
+			JdMantCurso c = new JdMantCurso();//instanciamos AdicionarAlumno 
 			c.setLocationRelativeTo(this);
 			c.setVisible(true);
 		}
