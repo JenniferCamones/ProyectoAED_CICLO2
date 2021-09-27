@@ -15,7 +15,7 @@ import javax.swing.JMenuItem;
 
 //implement actionli
 public class Principal extends JFrame implements ActionListener   {
-
+//jeni
 	private JPanel contentPane;
 	private JMenu mnmantenimiento;
 	private JMenu mnregistro;
