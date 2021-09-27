@@ -3,8 +3,11 @@ package cibertec;
 import java.awt.EventQueue;
 
 import javax.swing.JDialog;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
 
 public class JdReporteAMC extends JDialog {
+	private JButton btnAMC;
 
 	/**
 	 * Launch the application.
@@ -27,8 +30,16 @@ public class JdReporteAMC extends JDialog {
 	 * Create the dialog.
 	 */
 	public JdReporteAMC() {
-		setBounds(180, 100, 553, 373);
+		setBounds(180, 100, 513, 373);
+		getContentPane().setLayout(null);
+		
+		btnAMC = new JButton("Listar");
+		btnAMC.setBounds(191, 11, 89, 23);
+		getContentPane().add(btnAMC);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(21, 55, 32463, 32305);
+		getContentPane().add(scrollPane);
 
 	}
-
 }

@@ -7,10 +7,13 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 
 public class JdReporteAMP extends JDialog {
-
-	private final JPanel contentPanel = new JPanel();
+	private JButton btnReporteAMP;
+	private JTextArea txtAreaAMP;
+	private JScrollPane scrollPane;
 
 	/**
 	 * Launch the application.
@@ -30,26 +33,17 @@ public class JdReporteAMP extends JDialog {
 	 */
 	public JdReporteAMP() {
 		setBounds(100, 100, 450, 300);
-		getContentPane().setLayout(new BorderLayout());
-		contentPanel.setLayout(new FlowLayout());
-		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
-		getContentPane().add(contentPanel, BorderLayout.CENTER);
-		{
-			JPanel buttonPane = new JPanel();
-			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
-			getContentPane().add(buttonPane, BorderLayout.SOUTH);
-			{
-				JButton okButton = new JButton("OK");
-				okButton.setActionCommand("OK");
-				buttonPane.add(okButton);
-				getRootPane().setDefaultButton(okButton);
-			}
-			{
-				JButton cancelButton = new JButton("Cancel");
-				cancelButton.setActionCommand("Cancel");
-				buttonPane.add(cancelButton);
-			}
-		}
+		getContentPane().setLayout(null);
+		
+		btnReporteAMP = new JButton("Listar");
+		btnReporteAMP.setBounds(164, 11, 89, 23);
+		getContentPane().add(btnReporteAMP);
+		
+		scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 43, 414, 207);
+		getContentPane().add(scrollPane);
+		
+		txtAreaAMP = new JTextArea();
+		scrollPane.setViewportView(txtAreaAMP);
 	}
-
 }
