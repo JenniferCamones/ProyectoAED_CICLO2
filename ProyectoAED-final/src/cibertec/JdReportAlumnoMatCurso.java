@@ -3,8 +3,13 @@ package cibertec;
 import java.awt.EventQueue;
 
 import javax.swing.JDialog;
+import javax.swing.JLabel;
+import java.awt.Color;
+import javax.swing.JTextField;
 
-public class JdConsulAlumno extends JDialog {
+//pruebas
+//no
+public class JdReportAlumnoMatCurso extends JDialog {
 
 	/**
 	 * Launch the application.
@@ -13,7 +18,7 @@ public class JdConsulAlumno extends JDialog {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					JdConsulAlumno dialog = new JdConsulAlumno();
+					JdReportAlumnoMatCurso dialog = new JdReportAlumnoMatCurso();
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					dialog.setVisible(true);
 				} catch (Exception e) {
@@ -26,9 +31,7 @@ public class JdConsulAlumno extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public JdConsulAlumno() {
-		setBounds(180, 100, 553, 373);
+	public JdReportAlumnoMatCurso() {
 
 	}
-
 }

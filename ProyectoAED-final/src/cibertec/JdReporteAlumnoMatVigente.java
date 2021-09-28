@@ -10,7 +10,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
-public class JdReporteAMV extends JDialog {
+public class JdReporteAlumnoMatVigente extends JDialog {
 	private JButton btnReporteAMV;
 	private JTextArea txtAreaAMV;
 	private JScrollPane scrollPane;
@@ -20,7 +20,7 @@ public class JdReporteAMV extends JDialog {
 	 */
 	public static void main(String[] args) {
 		try {
-			JdReporteAMV dialog = new JdReporteAMV();
+			JdReporteAlumnoMatVigente dialog = new JdReporteAlumnoMatVigente();
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -31,7 +31,7 @@ public class JdReporteAMV extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public JdReporteAMV() {
+	public JdReporteAlumnoMatVigente() {
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(null);
 		{
