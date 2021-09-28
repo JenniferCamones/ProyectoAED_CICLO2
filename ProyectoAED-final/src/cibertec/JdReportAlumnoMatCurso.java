@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import java.awt.Color;
 import javax.swing.JTextField;
 
-//pruebas
+//Prueba de Aron
 //no
 public class JdReportAlumnoMatCurso extends JDialog {
 
