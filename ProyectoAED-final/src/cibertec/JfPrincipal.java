@@ -14,7 +14,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
 //implement actionli
-public class Principal extends JFrame implements ActionListener   {
+public class JfPrincipal extends JFrame implements ActionListener   {
 //jeni
 	private JPanel contentPane;
 	private JMenu mnmantenimiento;
@@ -44,7 +44,7 @@ public class Principal extends JFrame implements ActionListener   {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Principal frame = new Principal();
+					JfPrincipal frame = new JfPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -56,7 +56,7 @@ public class Principal extends JFrame implements ActionListener   {
 	/**
 	 * Create the frame.
 	 */
-	public Principal() {
+	public JfPrincipal() {
 		setTitle("REGISTRO Y MATR\u00CDCULA DE ALUMNOS");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
