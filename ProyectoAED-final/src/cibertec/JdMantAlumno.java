@@ -64,7 +64,7 @@ public class JdMantAlumno extends JDialog {
 	 */
 	public JdMantAlumno() {
 		setTitle("Alumno");
-		setBounds(180, 100, 537, 327);
+		setBounds(180, 100, 537, 467);
 		getContentPane().setLayout(null);
 		
 		btnAdicionarAlumno = new JButton("Adicionar");
@@ -112,16 +112,16 @@ public class JdMantAlumno extends JDialog {
 		getContentPane().add(lblEstados);
 		
 		lblEdad = new JLabel("Edad:");
-		lblEdad.setBounds(188, 88, 37, 14);
+		lblEdad.setBounds(199, 129, 37, 14);
 		getContentPane().add(lblEdad);
 		
 		textField = new JTextField();
-		textField.setBounds(76, 46, 86, 20);
+		textField.setBounds(76, 46, 249, 20);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(76, 85, 86, 20);
+		textField_1.setBounds(76, 85, 249, 20);
 		getContentPane().add(textField_1);
 		textField_1.setColumns(10);
 		
@@ -136,16 +136,16 @@ public class JdMantAlumno extends JDialog {
 		textField_3.setColumns(10);
 		
 		textField_5 = new JTextField();
-		textField_5.setBounds(228, 85, 86, 20);
+		textField_5.setBounds(239, 126, 86, 20);
 		getContentPane().add(textField_5);
 		textField_5.setColumns(10);
 		
 		JComboBox comboBox = new JComboBox();
-		comboBox.setBounds(66, 11, 159, 22);
+		comboBox.setBounds(76, 11, 211, 22);
 		getContentPane().add(comboBox);
 		
 		JComboBox comboBox_1 = new JComboBox();
-		comboBox_1.setBounds(77, 197, 159, 22);
+		comboBox_1.setBounds(77, 197, 210, 22);
 		getContentPane().add(comboBox_1);
 
 	}

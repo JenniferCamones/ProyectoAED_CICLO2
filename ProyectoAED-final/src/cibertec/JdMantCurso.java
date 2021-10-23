@@ -47,27 +47,27 @@ public class JdMantCurso extends JDialog {
 	 */
 	public JdMantCurso() {
 		setTitle("Curso");
-		setBounds(180, 100, 494, 322);
+		setBounds(180, 100, 578, 322);
 		getContentPane().setLayout(null);
 		
 		btnAdicionarCurso = new JButton("Adicionar");
-		btnAdicionarCurso.setBounds(350, 21, 89, 23);
+		btnAdicionarCurso.setBounds(436, 11, 89, 23);
 		getContentPane().add(btnAdicionarCurso);
 		
 		btnModificarCurso = new JButton("Modificar");
-		btnModificarCurso.setBounds(350, 81, 89, 23);
+		btnModificarCurso.setBounds(436, 65, 89, 23);
 		getContentPane().add(btnModificarCurso);
 		
 		btnEliminarCurso = new JButton("Eliminar");
-		btnEliminarCurso.setBounds(350, 139, 89, 23);
+		btnEliminarCurso.setBounds(436, 121, 89, 23);
 		getContentPane().add(btnEliminarCurso);
 		
 		btnAceptar = new JButton("Aceptar");
-		btnAceptar.setBounds(21, 172, 89, 23);
+		btnAceptar.setBounds(70, 172, 89, 23);
 		getContentPane().add(btnAceptar);
 		
 		btnCancelar = new JButton("Cancelar");
-		btnCancelar.setBounds(154, 172, 89, 23);
+		btnCancelar.setBounds(219, 172, 89, 23);
 		getContentPane().add(btnCancelar);
 		
 		lblCodigo = new JLabel("Codigo :");
@@ -78,8 +78,8 @@ public class JdMantCurso extends JDialog {
 		lblAsignatura.setBounds(10, 47, 68, 14);
 		getContentPane().add(lblAsignatura);
 		
-		lblHora = new JLabel("Hora :");
-		lblHora.setBounds(183, 125, 46, 14);
+		lblHora = new JLabel("Camtidad de Hora :");
+		lblHora.setBounds(182, 125, 126, 14);
 		getContentPane().add(lblHora);
 		
 		lblCiclo = new JLabel("Ciclo :");
@@ -99,7 +99,7 @@ public class JdMantCurso extends JDialog {
 		getContentPane().add(comboBox_1);
 		
 		textField = new JTextField();
-		textField.setBounds(81, 39, 177, 20);
+		textField.setBounds(81, 39, 257, 20);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
@@ -109,7 +109,7 @@ public class JdMantCurso extends JDialog {
 		textField_1.setColumns(10);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(239, 122, 86, 20);
+		textField_2.setBounds(318, 122, 61, 20);
 		getContentPane().add(textField_2);
 		textField_2.setColumns(10);
 
