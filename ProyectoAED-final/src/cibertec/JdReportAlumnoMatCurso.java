@@ -37,6 +37,7 @@ public class JdReportAlumnoMatCurso extends JDialog {
 	 * Create the dialog.
 	 */
 	public JdReportAlumnoMatCurso() {
+		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(null);
 		
 		JButton btnReporteAMC = new JButton("Listar");

@@ -73,6 +73,7 @@ public class JfPrincipal extends JFrame implements ActionListener   {
 		menuBar.add(mnArchivo);
 		
 		mntmSalir = new JMenuItem("Salir");
+		mntmSalir.addActionListener(this);
 		mnArchivo.add(mntmSalir);
 		
 		mnmantenimiento = new JMenu("Mantenimiento");
@@ -110,9 +111,11 @@ public class JfPrincipal extends JFrame implements ActionListener   {
 		mnconsulta.add(mntmConsutCurso);
 		
 		mntmConsutMatricula = new JMenuItem("Matricula");
+		mntmConsutMatricula.addActionListener(this);
 		mnconsulta.add(mntmConsutMatricula);
 		
 		mntmConsutRetiro = new JMenuItem("Retiro");
+		mntmConsutRetiro.addActionListener(this);
 		mnconsulta.add(mntmConsutRetiro);
 		
 		mnreporte = new JMenu("Reporte");
@@ -123,15 +126,18 @@ public class JfPrincipal extends JFrame implements ActionListener   {
 		mnreporte.add(mntmalumnosmatrículapendiente);
 		
 		mntmalumnosmatrículavigente = new JMenuItem("Alumnos con matr\u00EDcula vigente");
+		mntmalumnosmatrículavigente.addActionListener(this);
 		mnreporte.add(mntmalumnosmatrículavigente);
 		
 		mntmalumnosmatriculadoscurso = new JMenuItem("Alumnos matriculados por curso");
+		mntmalumnosmatriculadoscurso.addActionListener(this);
 		mnreporte.add(mntmalumnosmatriculadoscurso);
 		
 		mnayuda = new JMenu("Ayuda");
 		menuBar.add(mnayuda);
 		
 		mntmAcercaDelSistema = new JMenuItem("Acerca del sistema");
+		mntmAcercaDelSistema.addActionListener(this);
 		mnayuda.add(mntmAcercaDelSistema);
 	}
 	// 
@@ -146,7 +152,57 @@ public class JfPrincipal extends JFrame implements ActionListener   {
 		}
 		
 		if(mntmCurso == e.getSource() ) {
-			JdMantCurso c = new JdMantCurso();//instanciamos AdicionarAlumno 
+			JdMantCurso c = new JdMantCurso(); 
+			c.setLocationRelativeTo(this);
+			c.setVisible(true);
+		}
+		if(mntmMatricula == e.getSource() ) {
+			JdRegMatricula c = new JdRegMatricula(); 
+			c.setLocationRelativeTo(this);
+			c.setVisible(true);
+		}
+		if(mntmRetiro == e.getSource() ) {
+			JdRegRetiro c = new JdRegRetiro();
+			c.setLocationRelativeTo(this);
+			c.setVisible(true);
+		}
+		if(mntmConsutAlumno == e.getSource() ) {
+			JdConsulAlumno c = new JdConsulAlumno();
+			c.setLocationRelativeTo(this);
+			c.setVisible(true);
+		}
+		if(mntmConsutCurso == e.getSource() ) {
+			JdConsulCurso c = new JdConsulCurso(); 
+			c.setLocationRelativeTo(this);
+			c.setVisible(true);
+		}
+		if(mntmConsutMatricula == e.getSource() ) {
+			JdConsulMatricula c = new JdConsulMatricula(); 
+			c.setLocationRelativeTo(this);
+			c.setVisible(true);
+		}
+		if(mntmConsutRetiro == e.getSource() ) {
+			JdConsulRetiros c = new JdConsulRetiros();
+			c.setLocationRelativeTo(this);
+			c.setVisible(true);
+		}
+		if(mntmalumnosmatrículapendiente == e.getSource() ) {
+			JdReportAlumnoMatPend c = new JdReportAlumnoMatPend();
+			c.setLocationRelativeTo(this);
+			c.setVisible(true);
+		}
+		if(mntmalumnosmatrículavigente == e.getSource() ) {
+			JdReporteAlumnoMatVigente c = new JdReporteAlumnoMatVigente();
+			c.setLocationRelativeTo(this);
+			c.setVisible(true);
+		}
+		if(mntmalumnosmatriculadoscurso == e.getSource() ) {
+			JdReportAlumnoMatCurso c = new JdReportAlumnoMatCurso();
+			c.setLocationRelativeTo(this);
+			c.setVisible(true);
+		}
+		if(mntmAcercaDelSistema == e.getSource() ) {
+			JdAcercaDelSistema c = new JdAcercaDelSistema();
 			c.setLocationRelativeTo(this);
 			c.setVisible(true);
 		}
