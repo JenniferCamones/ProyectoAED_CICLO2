@@ -1,7 +1,7 @@
 package modelo;
 
 public class Alumno {
-	private String Nombres;
+	private String nombres;
 	private String Apellidos;
 	private String Dni;
 	private int Edad;
@@ -9,7 +9,7 @@ public class Alumno {
 	private String Estado;
 
 	public Alumno(String nombres, String apellidos, String dni, int edad, int celular, String estado) {
-		Nombres = nombres;
+		this.nombres = nombres;
 		Apellidos = apellidos;
 		Dni = dni;
 		Edad = edad;
@@ -17,12 +17,12 @@ public class Alumno {
 		Estado = estado;
 	}
 
-	public String getNombres() {
-		return Nombres;
+	public String getnombres() {
+		return nombres;
 	}
 
-	public void setNombres(String nombres) {
-		Nombres = nombres;
+	public void setnombres(String nombres) {
+		nombres = nombres;
 	}
 
 	public String getApellidos() {
