@@ -11,7 +11,7 @@ public class Calendario {
 	}
 	public static String horaActual() {
 			Calendar Calendario = Calendar.getInstance();
-			SimpleDateFormat formato = new SimpleDateFormat("hh:mm");
+			SimpleDateFormat formato = new SimpleDateFormat("hh:mm:ss");
 			return formato.format(Calendario.getTime());	
 		}
 }

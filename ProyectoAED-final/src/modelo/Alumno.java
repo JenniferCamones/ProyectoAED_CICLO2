@@ -1,20 +1,29 @@
 package modelo;
 
 public class Alumno {
+	private int alumno;
 	private String nombres;
 	private String Apellidos;
 	private String Dni;
 	private int Edad;
 	private int Celular;
-	private String Estado;
+	private int Estado;
 
-	public Alumno(String nombres, String apellidos, String dni, int edad, int celular, String estado) {
+	public Alumno(int alumno,String nombres, String apellidos, String dni, int edad, int celular, int estado) {
+		this.alumno = alumno;
 		this.nombres = nombres;
-		Apellidos = apellidos;
-		Dni = dni;
-		Edad = edad;
-		Celular = celular;
-		Estado = estado;
+		this.Apellidos = apellidos;
+		this.Dni = dni;
+		this.Edad = edad;
+		this.Celular = celular;
+		this.Estado = estado;
+	}
+	public int getalumno() {
+		return alumno;
+	}
+
+	public void setalumno(int alumno) {
+		this.alumno = alumno;
 	}
 
 	public String getnombres() {
@@ -22,7 +31,7 @@ public class Alumno {
 	}
 
 	public void setnombres(String nombres) {
-		nombres = nombres;
+		this.nombres = nombres;
 	}
 
 	public String getApellidos() {
@@ -30,7 +39,7 @@ public class Alumno {
 	}
 
 	public void setApellidos(String apellidos) {
-		Apellidos = apellidos;
+		this.Apellidos = apellidos;
 	}
 
 	public String getDni() {
@@ -38,7 +47,7 @@ public class Alumno {
 	}
 
 	public void setDni(String dni) {
-		Dni = dni;
+		this.Dni = dni;
 	}
 
 	public int getEdad() {
@@ -46,7 +55,7 @@ public class Alumno {
 	}
 
 	public void setEdad(int edad) {
-		Edad = edad;
+		this.Edad = edad;
 	}
 
 	public int getCelular() {
@@ -54,15 +63,15 @@ public class Alumno {
 	}
 
 	public void setCelular(int celular) {
-		Celular = celular;
+		this.Celular = celular;
 	}
 
-	public String getEstado() {
+	public int getEstado() {
 		return Estado;
 	}
 
-	public void setEstado(String estado) {
-		Estado = estado;
+	public void setEstado(int estado) {
+		this.Estado = estado;
 	}
 
 }

@@ -3,17 +3,16 @@ package modelo;
 public class Curso {
 	private int Codigo;
 	private String asignatura;
-	private String Ciclo;
+	private int Ciclo;
 	private int numeroCredito;
 	private int CamtidadHora;
 	
-	public Curso(int codigo, String asignatura, String ciclo, int numeroCredito, int camtidadHora) {
-		super();
-		Codigo = codigo;
+	public Curso(int codigo, String asignatura, int ciclo, int numeroCredito, int camtidadHora) {
+		this.Codigo = codigo;
 		this.asignatura = asignatura;
-		Ciclo = ciclo;
+		this.Ciclo = ciclo;
 		this.numeroCredito = numeroCredito;
-		CamtidadHora = camtidadHora;
+		this.CamtidadHora = camtidadHora;
 	}
 
 	public int getCodigo() {
@@ -21,7 +20,7 @@ public class Curso {
 	}
 
 	public void setCodigo(int codigo) {
-		Codigo = codigo;
+		this.Codigo = codigo;
 	}
 
 	public String getAsignatura() {
@@ -32,12 +31,12 @@ public class Curso {
 		this.asignatura = asignatura;
 	}
 
-	public String getCiclo() {
+	public int getCiclo() {
 		return Ciclo;
 	}
 
-	public void setCiclo(String ciclo) {
-		Ciclo = ciclo;
+	public void setCiclo(int ciclo) {
+		this.Ciclo = ciclo;
 	}
 
 	public int getNumeroCredito() {
@@ -53,7 +52,7 @@ public class Curso {
 	}
 
 	public void setCamtidadHora(int camtidadHora) {
-		CamtidadHora = camtidadHora;
+		this.CamtidadHora = camtidadHora;
 	}
 	
 	
