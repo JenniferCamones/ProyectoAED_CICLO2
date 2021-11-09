@@ -1,12 +1,6 @@
-
-/*
- * 
- * Comentario para la prueba de github
- * hola soy andre
- */
- 
 package cibertec;
-
+import modelo.*;
+import array.*;
 import java.awt.EventQueue;
 
 import javax.swing.JDialog;
@@ -19,8 +13,6 @@ import javax.swing.JTabbedPane;
 import javax.swing.JScrollPane;
 import javax.swing.JMenu;
 import javax.swing.JComboBox;
-//prueba
-
 
 
 public class JdMantAlumno extends JDialog {
