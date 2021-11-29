@@ -73,7 +73,7 @@ private ArrayList<Curso> Codigo;
 			int Codigo, Ciclo, numeroCredito, CamtidadHora;
 			String asignatura, linea;
 			String[] s;
-			br = new BufferedReader(new FileReader("Codigos.txt"));
+			br = new BufferedReader(new FileReader("Codigo.txt"));
 			while ((linea = br.readLine()) != null) {
 				s = linea.split(";");
 				Codigo = Integer.parseInt(s[0].trim());

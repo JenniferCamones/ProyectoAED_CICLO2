@@ -67,6 +67,7 @@ public class JdConsulRetiros extends JDialog implements ActionListener {
 		cboCodigo = new JComboBox();
 		cboCodigo.setBounds(135, 30, 115, 21);
 		getContentPane().add(cboCodigo);
+		listarCboCodigo();
 
 	}
 	
