@@ -79,7 +79,6 @@ public class JdConsulCurso extends JDialog implements ActionListener {
 	
 	
 	public void actionPerformed(ActionEvent e) {
-		
 		if (e.getSource() == btnConsultar) {
 			actionPerformedBtnConsultar(e);
 		}
